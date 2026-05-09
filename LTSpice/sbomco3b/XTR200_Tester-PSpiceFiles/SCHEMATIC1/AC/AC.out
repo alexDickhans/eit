@@ -1,0 +1,164 @@
+
+**** 08/19/25 10:16:13 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AC"  [ c:\users\a0227588\documents\spice models\xtr200\xtr200_tester-pspicefiles\schematic1\ac.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "AC.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "c:/users/a0227588/documents/spice models/xtr200_current/xtr200 library/xtr200.lib" 
+* From [PSPICE NETLIST] section of C:\SPB_Data-Silent\cdssetup\OrCAD_PSpice\23.1.0\PSpice.ini file:
+.lib "C:\Users\a0227588\Downloads\OPA348_PSpice\opa348.lib" 
+.lib "C:\Users\a0227588\Documents\Spice Models\Autospice Test Models\Other\Autospice_Library.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 100 1 10MEG
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source XTR200_TESTER
+X_U1         N00190 N01173 N00091 N00186 N00130 N00130 N00231 0 XTR200
+R_R1         0 N00091  1.5k TC=0,0 
+V_V1         N00190 0 0
+V_V2         N00186 0 24
+R_R2         0 N00231  1k TC=0,0 
+V_V3         N01173 0 DC 2.5 AC 1
++PULSE 0 5 0 10n 10n 4.9998e-4 1m
+
+**** RESUMING AC.cir ****
+.END
+
+INFO(ORPSIM-16573): AC analysis does not support expression evaluation at each frequency. ABM devices with non-linear operations will be evaluated only at bias point.
+
+**** 08/19/25 10:16:13 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AC"  [ c:\users\a0227588\documents\spice models\xtr200\xtr200_tester-pspicefiles\schematic1\ac.sim ] 
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.X_SV1._SV1 X_U1.X_SC1._SC1 X_U1.X_SV2._SV2 X_U1.X_SC2._SC2 
+         RON    1.000000E-06    1.000000E-06    1.000000E-06    1.000000E-06 
+        ROFF    1.000000E+09    1.000000E+09    1.000000E+09    1.000000E+09 
+         VON     .75             .8              .75             .8          
+        VOFF     .8              .75             .8              .75         
+
+
+               X_U1.X_SV3._SV3 X_U1.X_SV4._SV4 X_U1.X_SC3._SC3 
+         RON    1.000000E-06    1.000000E-06    1.000000E-06 
+        ROFF    1.000000E+09    1.000000E+09    1.000000E+09 
+         VON     .75             .75             .8          
+        VOFF     .8              .8              .75         
+
+
+               X_U1.X_OUT_CL._OUT_CL 
+         RON     .1          
+        ROFF    1.000000E+09 
+         VON    -.1          
+        VOFF     .1          
+
+
+               X_U1.X_ESDN._ESDN 
+         RON    1.000000E-03 
+        ROFF    1.000000E+09 
+         VON    -.1          
+        VOFF     .1          
+
+
+               X_U1.X_ESDP._ESDP               X_U1.X_SV5._SV5 X_U1.X_SV6._SV6 
+         RON    1.000000E-03                    1.000000E-06    1.000000E-06 
+        ROFF    1.000000E+09                    1.000000E+09    1.000000E+09 
+         VON    6.1                              .75             .75         
+        VOFF    5.9                              .8              .8          
+
+
+**** 08/19/25 10:16:13 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AC"  [ c:\users\a0227588\documents\spice models\xtr200\xtr200_tester-pspicefiles\schematic1\ac.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00091)   14.1530 (N00130)   23.5280 (N00186)   24.0000 (N00190)    0.0000     
+
+(N00231)    9.3747 (N01173)    2.5000 (X_U1.FB1)   19.2820                      
+
+(X_U1.FBV)    9.3737                  (X_U1.INN)    2.5000                      
+
+(X_U1.INP)    2.5000                  (X_U1.INNV)    2.5000                     
+
+(X_U1.OUT1)   -9.4352                 (X_U1.OUT2)   19.2820                     
+
+(X_U1.OUT3)   -9.4352                 (X_U1.OUT4)    9.3737                     
+
+(X_U1.ESD_IN)    2.5000               (X_U1.N05328)   19.2820                   
+
+(X_U1.N05508)    9.4352               (X_U1.N917958) 9.435E-06                  
+
+(X_U1.N1010477)   11.8750             (X_U1.N1162744)   23.5280                 
+
+(X_U1.N1177115)    2.5000             
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+    V_V2        -1.919E-02
+    V_V3        -9.962E-09
+    X_U1.V_VOUTOFFSET  -9.373E-03
+    X_U1.V_V7    2.426E-08
+
+    TOTAL POWER DISSIPATION   4.61E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 08/19/25 10:16:13 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AC"  [ c:\users\a0227588\documents\spice models\xtr200\xtr200_tester-pspicefiles\schematic1\ac.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

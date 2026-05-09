@@ -1,0 +1,606 @@
+
+**** 08/19/25 09:58:23 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Transient_Testing"  [ c:\users\a0227588\documents\spice models\xtr200\xtr200_tester-pspicefiles\schematic1\t
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Transient_Testing.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "c:/users/a0227588/documents/spice models/xtr200_current/xtr200 library/xtr200.lib" 
+* From [PSPICE NETLIST] section of C:\SPB_Data-Silent\cdssetup\OrCAD_PSpice\23.1.0\PSpice.ini file:
+.lib "C:\Users\a0227588\Downloads\OPA348_PSpice\opa348.lib" 
+.lib "C:\Users\a0227588\Documents\Spice Models\Autospice Test Models\Other\Autospice_Library.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10m 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source XTR200_TESTER
+X_U1         N00190 N01173 N00091 N00186 N00130 N00130 N00231 0 XTR200
+R_R1         0 N00091  1.5k TC=0,0 
+V_V1         N00190 0 5
+V_V2         N00186 0 24
+R_R2         0 N00231  250 TC=0,0 
+V_V3         N01173 0 DC 0 AC 0
++PULSE 0 5 0 10n 10n 4.9998e-4 1m
+
+**** RESUMING Transient_Testing.cir ****
+.END
+
+**** 08/19/25 09:58:23 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Transient_Testing"  [ c:\users\a0227588\documents\spice models\xtr200\xtr200_tester-pspicefiles\schematic1\t
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.X_SV1._SV1 X_U1.X_SC1._SC1 X_U1.X_SV2._SV2 X_U1.X_SC2._SC2 
+         RON    1.000000E-06    1.000000E-06    1.000000E-06    1.000000E-06 
+        ROFF    1.000000E+09    1.000000E+09    1.000000E+09    1.000000E+09 
+         VON     .75             .8              .75             .8          
+        VOFF     .8              .75             .8              .75         
+
+
+               X_U1.X_SV3._SV3 X_U1.X_SV4._SV4 X_U1.X_SC3._SC3 
+         RON    1.000000E-06    1.000000E-06    1.000000E-06 
+        ROFF    1.000000E+09    1.000000E+09    1.000000E+09 
+         VON     .75             .75             .8          
+        VOFF     .8              .8              .75         
+
+
+               X_U1.X_OUT_CL._OUT_CL 
+         RON     .1          
+        ROFF    1.000000E+09 
+         VON    -.1          
+        VOFF     .1          
+
+
+               X_U1.X_ESDN._ESDN 
+         RON    1.000000E-03 
+        ROFF    1.000000E+09 
+         VON    -.01         
+        VOFF     .01         
+
+
+               X_U1.X_ESDP._ESDP               X_U1.X_SV5._SV5 X_U1.X_SV6._SV6 
+         RON    1.000000E-03                    1.000000E-06    1.000000E-06 
+        ROFF    1.000000E+09                    1.000000E+09    1.000000E+09 
+         VON    6.1                              .75             .75         
+        VOFF    5.9                              .8              .8          
+
+
+**** 08/19/25 09:58:23 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Transient_Testing"  [ c:\users\a0227588\documents\spice models\xtr200\xtr200_tester-pspicefiles\schematic1\t
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00091)-2.476E-12 (N00130)   24.0000 (N00186)   24.0000 (N00190)    5.0000     
+
+(N00231) 503.4E-06 (N01173)    0.0000 (X_U1.FB1)   24.0000                      
+
+(X_U1.FBV)-74.48E-09                  (X_U1.INN)-2.476E-12                      
+
+(X_U1.INP)-2.500E-12                  (X_U1.INNV)-19.86E-09                     
+
+(X_U1.OUT1) 24.00E-09                 (X_U1.OUT2) 29.53E-06                     
+
+(X_U1.OUT3) 29.53E-06                 (X_U1.OUT4)-496.6E-06                     
+
+(X_U1.ESD_IN)-2.500E-12               (X_U1.N05328)   24.0000                   
+
+(X_U1.N05508)-24.00E-09               (X_U1.N917958)-24.00E-15                  
+
+(X_U1.N1010477)    2.5005             (X_U1.N1162744)   24.0000                 
+
+(X_U1.N1177115)-2.500E-12             
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -4.505E-08
+    V_V2        -3.240E-04
+    V_V3        -2.500E-11
+    X_U1.V_VOUTOFFSET   2.950E-08
+    X_U1.V_V7    4.302E-08
+
+    TOTAL POWER DISSIPATION   7.78E-03  WATTS
+
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+
+ERROR(ORPSIM-15138): Convergence problem in Transient Analysis at Time =  3.502E-03.
+         Time step =  650.5E-21, minimum allowable step size =  1.000E-18
+
+  These voltages failed to converge:
+
+    V(N00231)                 =    5.921mV  \    3.479mV
+    V(X_U1.OUT2)              =   -5.417KV  \   -2.976KV
+    V(X_U1.OUT4)              =    4.921mV  \    2.479mV
+    V(X_U1.OUT3)              =   -5.417KV  \   -2.976KV
+
+  These supply currents failed to converge:
+
+    I(X_U1.E_E5)              =    12.40uA  \    6.676uA
+    I(X_U1.E_E7)              =   -29.42uA  \   -26.98uA
+    I(V_V2)                   =  -215.70uA  \  -264.53uA
+    I(X_U1.V_VOUTOFFSET)      =   -21.64uA  \   -11.87uA
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00091)-2.477E-12 (N00130)   24.0050 (N00186)   24.0000 (N00190)    5.0000     
+
+(N00231)     .0059 (N01173)    0.0000 (X_U1.FB1)   24.0050                      
+
+(X_U1.FBV) 738.0E-09                  (X_U1.INN)-2.477E-12                      
+
+(X_U1.INP)-2.501E-12                  (X_U1.INNV) 196.8E-09                     
+
+(X_U1.OUT1) 24.00E-09                 (X_U1.OUT2)-5417.4000                     
+
+(X_U1.OUT3)-5417.4000                 (X_U1.OUT4)     .0049                     
+
+(X_U1.ESD_IN)-2.501E-12               (X_U1.N05328)   24.0000                   
+
+(X_U1.N05508)-24.00E-09               (X_U1.N917958)-24.00E-15                  
+
+(X_U1.N1010477)    2.5059             (X_U1.N1162744)   24.0030                 
+
+(X_U1.N1177115) 1.748E-06             
+
+
+**** Interrupt ****
+**** Param: RUNFOR = 0
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-12
+**** Param: VNTOL = 1e-06
+**** Param: GMIN = 1e-12
+**** Param: TSTOP = 0.01
+**** Param: TMAX = 0
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 100
+**** Param: AutoConverge = 1
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-10
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 3
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+Convergence problem in transient analysis at Time =  3.502E-03
+         Time step =  162.6E-21, minimum allowable step size =  1.000E-18
+
+  These voltages failed to converge:
+
+    V(N00231)                 =  -182.61uV  \    3.480mV
+    V(X_U1.OUT2)              =    686.09V  \   -2.976KV
+    V(X_U1.OUT4)              =   -1.183mV  \    2.480mV
+    V(X_U1.N1010477)          =     2.500V  \     2.504V
+    V(X_U1.OUT3)              =    686.09V  \   -2.976KV
+
+  These supply currents failed to converge:
+
+    I(X_U1.E_E5)              =   -1.550uA  \    6.199uA
+    I(X_U1.E_E7)              =   -23.32uA  \   -26.98uA
+    I(V_V2)                   =  -337.77uA  \  -264.52uA
+    I(X_U1.V_VOUTOFFSET)      =    2.773uA  \   -11.88uA
+
+  These devices failed to converge:
+    X_U1.X_U1.G1 
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00091)-2.477E-12 (N00130)   23.9990 (N00186)   24.0000 (N00190)    5.0000     
+
+(N00231)-182.6E-06 (N01173)    0.0000 (X_U1.FB1)   23.9990                      
+
+(X_U1.FBV)-177.4E-09                  (X_U1.INN)-2.477E-12                      
+
+(X_U1.INP)-2.501E-12                  (X_U1.INNV)-47.30E-09                     
+
+(X_U1.OUT1) 24.00E-09                 (X_U1.OUT2)  686.0900                     
+
+(X_U1.OUT3)  686.0900                 (X_U1.OUT4)    -.0012                     
+
+(X_U1.ESD_IN)-2.501E-12               (X_U1.N05328)   24.0000                   
+
+(X_U1.N05508)-24.00E-09               (X_U1.N917958)-24.00E-15                  
+
+(X_U1.N1010477)    2.4998             (X_U1.N1162744)   23.9970                 
+
+(X_U1.N1177115) 1.748E-06             
+
+Resuming Simulation with the following settings
+ITL4 = 354
+ABSTOL = 1.41e-09
+
+Convergence problem in transient analysis at Time =  3.502E-03
+         Time step =  162.6E-21, minimum allowable step size =  1.000E-18
+
+  These voltages failed to converge:
+
+    V(N00231)                 =  -182.61uV  \    3.480mV
+    V(X_U1.OUT2)              =    686.09V  \   -2.976KV
+    V(X_U1.OUT4)              =   -1.183mV  \    2.480mV
+    V(X_U1.N1010477)          =     2.500V  \     2.504V
+    V(X_U1.OUT3)              =    686.09V  \   -2.976KV
+
+  These supply currents failed to converge:
+
+    I(X_U1.E_E5)              =   -1.550uA  \    6.199uA
+    I(X_U1.E_E7)              =   -23.32uA  \   -26.98uA
+    I(V_V2)                   =  -337.77uA  \  -264.52uA
+    I(X_U1.V_VOUTOFFSET)      =    2.773uA  \   -11.88uA
+
+  These devices failed to converge:
+    X_U1.X_U1.G1 
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00091)-2.477E-12 (N00130)   23.9990 (N00186)   24.0000 (N00190)    5.0000     
+
+(N00231)-182.6E-06 (N01173)    0.0000 (X_U1.FB1)   23.9990                      
+
+(X_U1.FBV)-177.4E-09                  (X_U1.INN)-2.477E-12                      
+
+(X_U1.INP)-2.501E-12                  (X_U1.INNV)-47.30E-09                     
+
+(X_U1.OUT1) 24.00E-09                 (X_U1.OUT2)  686.0900                     
+
+(X_U1.OUT3)  686.0900                 (X_U1.OUT4)    -.0012                     
+
+(X_U1.ESD_IN)-2.501E-12               (X_U1.N05328)   24.0000                   
+
+(X_U1.N05508)-24.00E-09               (X_U1.N917958)-24.00E-15                  
+
+(X_U1.N1010477)    2.4998             (X_U1.N1162744)   23.9970                 
+
+(X_U1.N1177115) 1.748E-06             
+
+Resuming Simulation with the following settings
+ITL4 = 1000
+ABSTOL = 2e-06
+
+Convergence problem in transient analysis at Time =  3.502E-03
+         Time step =  162.6E-21, minimum allowable step size =  1.000E-18
+
+  These voltages failed to converge:
+
+    V(N00231)                 =  -182.61uV  \    3.480mV
+    V(X_U1.OUT2)              =    686.09V  \   -2.976KV
+    V(X_U1.OUT4)              =   -1.183mV  \    2.480mV
+    V(X_U1.N1010477)          =     2.500V  \     2.504V
+    V(X_U1.OUT3)              =    686.09V  \   -2.976KV
+
+  These supply currents failed to converge:
+
+    I(X_U1.E_E5)              =   -1.550uA  \    6.199uA
+    I(X_U1.E_E7)              =   -23.32uA  \   -26.98uA
+    I(V_V2)                   =  -337.77uA  \  -264.52uA
+    I(X_U1.V_VOUTOFFSET)      =    2.773uA  \   -11.88uA
+
+  These devices failed to converge:
+    X_U1.X_U1.G1 
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00091)-2.477E-12 (N00130)   23.9990 (N00186)   24.0000 (N00190)    5.0000     
+
+(N00231)-182.6E-06 (N01173)    0.0000 (X_U1.FB1)   23.9990                      
+
+(X_U1.FBV)-177.4E-09                  (X_U1.INN)-2.477E-12                      
+
+(X_U1.INP)-2.501E-12                  (X_U1.INNV)-47.30E-09                     
+
+(X_U1.OUT1) 24.00E-09                 (X_U1.OUT2)  686.0900                     
+
+(X_U1.OUT3)  686.0900                 (X_U1.OUT4)    -.0012                     
+
+(X_U1.ESD_IN)-2.501E-12               (X_U1.N05328)   24.0000                   
+
+(X_U1.N05508)-24.00E-09               (X_U1.N917958)-24.00E-15                  
+
+(X_U1.N1010477)    2.4998             (X_U1.N1162744)   23.9970                 
+
+(X_U1.N1177115) 1.748E-06             
+
+Resuming Simulation with the following settings
+ABSTOL = 0.001
+
+Convergence problem in transient analysis at Time =  3.502E-03
+         Time step =  162.6E-21, minimum allowable step size =  1.000E-18
+
+  These voltages failed to converge:
+
+    V(N00231)                 =  -182.61uV  \    3.480mV
+    V(X_U1.OUT2)              =    686.09V  \   -2.976KV
+    V(X_U1.OUT4)              =   -1.183mV  \    2.480mV
+    V(X_U1.N1010477)          =     2.500V  \     2.504V
+    V(X_U1.OUT3)              =    686.09V  \   -2.976KV
+
+  These devices failed to converge:
+    X_U1.X_U1.G1 
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00091)-2.477E-12 (N00130)   23.9990 (N00186)   24.0000 (N00190)    5.0000     
+
+(N00231)-182.6E-06 (N01173)    0.0000 (X_U1.FB1)   23.9990                      
+
+(X_U1.FBV)-177.4E-09                  (X_U1.INN)-2.477E-12                      
+
+(X_U1.INP)-2.501E-12                  (X_U1.INNV)-47.30E-09                     
+
+(X_U1.OUT1) 24.00E-09                 (X_U1.OUT2)  686.0900                     
+
+(X_U1.OUT3)  686.0900                 (X_U1.OUT4)    -.0012                     
+
+(X_U1.ESD_IN)-2.501E-12               (X_U1.N05328)   24.0000                   
+
+(X_U1.N05508)-24.00E-09               (X_U1.N917958)-24.00E-15                  
+
+(X_U1.N1010477)    2.4998             (X_U1.N1162744)   23.9970                 
+
+(X_U1.N1177115) 1.748E-06             
+
+Resuming Simulation with the following settings
+RELTOL = 0.0086
+
+Convergence problem in transient analysis at Time =  3.502E-03
+         Time step =  162.6E-21, minimum allowable step size =  1.000E-18
+
+  These voltages failed to converge:
+
+    V(N00231)                 =  -182.61uV  \    3.480mV
+    V(X_U1.OUT2)              =    686.09V  \   -2.976KV
+    V(X_U1.OUT4)              =   -1.183mV  \    2.480mV
+    V(X_U1.OUT3)              =    686.09V  \   -2.976KV
+
+  These devices failed to converge:
+    X_U1.X_U1.G1 
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00091)-2.477E-12 (N00130)   23.9990 (N00186)   24.0000 (N00190)    5.0000     
+
+(N00231)-182.6E-06 (N01173)    0.0000 (X_U1.FB1)   23.9990                      
+
+(X_U1.FBV)-177.4E-09                  (X_U1.INN)-2.477E-12                      
+
+(X_U1.INP)-2.501E-12                  (X_U1.INNV)-47.30E-09                     
+
+(X_U1.OUT1) 24.00E-09                 (X_U1.OUT2)  686.0900                     
+
+(X_U1.OUT3)  686.0900                 (X_U1.OUT4)    -.0012                     
+
+(X_U1.ESD_IN)-2.501E-12               (X_U1.N05328)   24.0000                   
+
+(X_U1.N05508)-24.00E-09               (X_U1.N917958)-24.00E-15                  
+
+(X_U1.N1010477)    2.4998             (X_U1.N1162744)   23.9970                 
+
+(X_U1.N1177115) 1.748E-06             
+
+Resuming Simulation with the following settings
+RELTOL = 0.05
+
+Convergence problem in transient analysis at Time =  3.502E-03
+         Time step =  162.6E-21, minimum allowable step size =  1.000E-18
+
+  These voltages failed to converge:
+
+    V(N00231)                 =  -182.61uV  \    3.480mV
+    V(X_U1.OUT2)              =    686.09V  \   -2.976KV
+    V(X_U1.OUT4)              =   -1.183mV  \    2.480mV
+    V(X_U1.OUT3)              =    686.09V  \   -2.976KV
+
+  These devices failed to converge:
+    X_U1.X_U1.G1 
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00091)-2.477E-12 (N00130)   23.9990 (N00186)   24.0000 (N00190)    5.0000     
+
+(N00231)-182.6E-06 (N01173)    0.0000 (X_U1.FB1)   23.9990                      
+
+(X_U1.FBV)-177.4E-09                  (X_U1.INN)-2.477E-12                      
+
+(X_U1.INP)-2.501E-12                  (X_U1.INNV)-47.30E-09                     
+
+(X_U1.OUT1) 24.00E-09                 (X_U1.OUT2)  686.0900                     
+
+(X_U1.OUT3)  686.0900                 (X_U1.OUT4)    -.0012                     
+
+(X_U1.ESD_IN)-2.501E-12               (X_U1.N05328)   24.0000                   
+
+(X_U1.N05508)-24.00E-09               (X_U1.N917958)-24.00E-15                  
+
+(X_U1.N1010477)    2.4998             (X_U1.N1162744)   23.9970                 
+
+(X_U1.N1177115) 1.748E-06             
+
+Resuming could not converge the circuit, restarting it now
+
+  These voltages failed to converge:
+
+    V(N00091)                 =   -2.477pV  \   -2.477pV
+    V(N00231)                 =    2.259mV  \  -182.61uV
+    V(X_U1.N05508)            =   -24.00nV  \   -24.00nV
+    V(X_U1.INN)               =   -2.477pV  \   -2.477pV
+    V(X_U1.OUT2)              =   -1.755KV  \    686.09V
+    V(X_U1.FB1)               =     24.00V  \     24.00V
+    V(X_U1.N05328)            =     24.00V  \     24.00V
+    V(N00130)                 =     24.00V  \     24.00V
+    V(X_U1.INNV)              =    50.35nV  \   -47.30nV
+    V(X_U1.FBV)               =   188.81nV  \  -177.36nV
+    V(X_U1.OUT4)              =    1.259mV  \   -1.183mV
+    V(X_U1.OUT1)              =    24.00nV  \    24.00nV
+    V(X_U1.N917958)           =   -24.00fV  \   -24.00fV
+    V(X_U1.N1010477)          =     2.502V  \     2.500V
+    V(X_U1.N1162744)          =     24.00V  \     24.00V
+    V(X_U1.OUT3)              =   -1.755KV  \    686.09V
+
+  These supply currents failed to converge:
+
+    I(X_U1.E_E6)              =    24.00uA  \    24.00uA
+    I(X_U1.E_E5)              =    4.053uA  \   -1.550uA
+    I(X_U1.E_E7)              =   -25.76uA  \   -23.32uA
+    I(V_V1)                   =   -45.00nA  \   -45.05nA
+    I(V_V2)                   =  -288.93uA  \  -337.77uA
+    I(X_U1.V_VOUTOFFSET)      =   -6.993uA  \    2.773uA
+    I(X_U1.V_V7)              =    43.00nA  \    43.02nA
+
+  These devices failed to converge:
+    X_U1.X_U1.G1 
+
+ERROR(ORPSIM-16550): Floating point computation failed during matrix solution. Possible solutions: 1)Ensure that all device parameters are in valid range. 2)Try using .options LIMIT
+
+INTERNAL ERROR -- Invalid Number, Divide(0, 0)
+
+ABORTING SIMULATION
+**** 08/19/25 09:58:23 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Transient_Testing"  [ c:\users\a0227588\documents\spice models\xtr200\xtr200_tester-pspicefiles\schematic1\t
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+Node counts:
+  Top level (NUNODS)                =           6
+  External (NCNODS)                 =          23
+  Total (NUMNOD)                    =          23
+
+Total device count (NUMEL)          =          54
+  Capacitors (C)                    =           5
+  VCVS (E)                          =           3
+  VCCS (G)                          =           2
+  Current Sources (I)               =           3
+  Resistors (R)                     =          24
+  VSwitches (S)                     =          12
+  Voltage Sources (V)               =           5
+
+Number of subcircuits (X)           =          14
+
+Matrix statistics:
+  Matrix size (NSTOP)               =          31
+  Initial no. elements (NTTAR)      =         104
+  No. elements w/ fillin (NTTBR)    =         134
+  No. fillins (IFILL)               =          30
+  No. overflows (NTTOV)             =          97
+  No. LU operations (IOPS)          =         135
+  Percent sparsity (PERSPA)         =      86.056
+
+Analysis statistics:
+  No. total time points (NUMTTP)    =         942
+  No. rejected time points (NUMRTP) =         219
+  No. iterations (NUMNIT)           =        8559
+
+Load Threads                        =           5
+
+Runtime statistics:                       Seconds      Iterations
+  Matrix load                       =         .72
+  Matrix solution                   =         .03               3
+  Readin                            =        0.00
+  General setup                     =        0.00
+  CMI setup                     =        0.00
+  Setup                             =        0.00
+  DC sweep                          =        0.00               0
+  Bias point                        =         .02              21
+  AC and noise                      =        0.00               0
+  Total transient analysis          =        0.00
+  Output                            =        0.00
+  Overhead                          =         .84
+  Total job time (using Solver 1)   =      917.33
+

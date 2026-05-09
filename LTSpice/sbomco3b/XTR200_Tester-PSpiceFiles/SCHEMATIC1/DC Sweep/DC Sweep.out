@@ -1,0 +1,113 @@
+
+**** 08/12/25 12:43:01 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DC Sweep"  [ c:\users\a0227588\documents\spice models\xtr200\xtr200_tester-PSpiceFiles\SCHEMATIC1\DC Sweep.s
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "DC Sweep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "c:/users/a0227588/documents/spice models/xtr200_current/xtr200 library/xtr200.lib" 
+* From [PSPICE NETLIST] section of C:\SPB_Data-Silent\cdssetup\OrCAD_PSpice\23.1.0\PSpice.ini file:
+.lib "C:\Users\a0227588\Downloads\OPA348_PSpice\opa348.lib" 
+.lib "C:\Users\a0227588\Documents\Spice Models\Autospice Test Models\Other\Autospice_Library.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_V3 0 5 .1 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source XTR200_TESTER
+X_U1         N00190 N00360 N00091 N00186 N00130 N00130 N00231 0 XTR200
+R_R1         0 N00091  1.5k TC=0,0 
+V_V1         N00190 0 0
+V_V2         N00186 0 24
+R_R2         0 N00231  220 TC=0,0 
+V_V3         N00360 0 DC 0 AC 0
++PULSE -2 5 0 10n 10n 4.9998e-4 1m
+
+**** RESUMING "DC Sweep.cir" ****
+.END
+
+WARNING(ORPSIM-15223): Library file "c:\users\a0227588\documents\spice models\xtr200_current\xtr200 library\xtr200.lib" has changed since index file xtr200.ind was created.
+
+WARNING(ORPSIM-15227): The timestamp changed from Tue Aug 12 12:38:25 2025 to Tue Aug 12 12:42:57 2025.
+
+INFO(ORPSIM-15422): Making new index file xtr200.ind for library file xtr200.lib.
+
+Index has 12 entries from 1 file(s).
+
+**** 08/12/25 12:43:01 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DC Sweep"  [ c:\users\a0227588\documents\spice models\xtr200\xtr200_tester-PSpiceFiles\SCHEMATIC1\DC Sweep.s
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.X_SV1._SV1 X_U1.X_SC1._SC1 X_U1.X_SV2._SV2 X_U1.X_SC2._SC2 
+         RON    1.000000E-06    1.000000E-06    1.000000E-06    1.000000E-06 
+        ROFF    1.000000E+09    1.000000E+09    1.000000E+09    1.000000E+09 
+         VON     .75             .8              .75             .8          
+        VOFF     .8              .75             .8              .75         
+
+
+               X_U1.X_SV3._SV3 X_U1.X_SV4._SV4 X_U1.X_SC3._SC3 X_U1.X_SV6._SV6 
+         RON    1.000000E-06    1.000000E-06    1.000000E-06     .1          
+        ROFF    1.000000E+09    1.000000E+09    1.000000E+09    1.000000E+09 
+         VON     .75             .75             .8             -.1          
+        VOFF     .8              .8              .75             .1          
+
+
+               X_U1.X_ESDN._ESDN 
+         RON    1.000000E-03 
+        ROFF    1.000000E+09 
+         VON    -.1          
+        VOFF     .01         
+
+
+               X_U1.X_ESDP._ESDP 
+         RON    1.000000E-03 
+        ROFF    1.000000E+09 
+         VON    6.1          
+        VOFF    5.9          
+
+
+
+          JOB CONCLUDED
+
+**** 08/12/25 12:43:01 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DC Sweep"  [ c:\users\a0227588\documents\spice models\xtr200\xtr200_tester-PSpiceFiles\SCHEMATIC1\DC Sweep.s
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

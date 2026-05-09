@@ -1,0 +1,172 @@
+
+**** 08/18/25 13:36:01 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AC"  [ c:\users\a0227588\documents\spice models\xtr200\xtr200_tester-pspicefiles\schematic1\ac.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "AC.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "c:/users/a0227588/documents/spice models/xtr200_current/xtr200 library/xtr200.lib" 
+* From [PSPICE NETLIST] section of C:\SPB_Data-Silent\cdssetup\OrCAD_PSpice\23.1.0\PSpice.ini file:
+.lib "C:\Users\a0227588\Downloads\OPA348_PSpice\opa348.lib" 
+.lib "C:\Users\a0227588\Documents\Spice Models\Autospice Test Models\Other\Autospice_Library.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 100 1 1MEG
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source XTR200_TESTER
+X_U1         N00190 N01173 N00091 N00186 N00130 N00130 N00231 0 XTR200
+R_R1         0 N00091  1.5k TC=0,0 
+V_V1         N00190 0 0
+V_V2         N00186 0 24
+R_R2         0 N00231  1k TC=0,0 
+V_V3         N01173 0 DC 2.5 AC 1Vac 
+
+**** RESUMING AC.cir ****
+.END
+
+INFO(ORPSIM-16573): AC analysis does not support expression evaluation at each frequency. ABM devices with non-linear operations will be evaluated only at bias point.
+
+**** 08/18/25 13:36:01 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AC"  [ c:\users\a0227588\documents\spice models\xtr200\xtr200_tester-pspicefiles\schematic1\ac.sim ] 
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.X_SV1._SV1 X_U1.X_SC1._SC1 X_U1.X_SV2._SV2 X_U1.X_SC2._SC2 
+         RON    1.000000E-06    1.000000E-06    1.000000E-06    1.000000E-06 
+        ROFF    1.000000E+09    1.000000E+09    1.000000E+09    1.000000E+09 
+         VON     .75             .8              .75             .8          
+        VOFF     .8              .75             .8              .75         
+
+
+               X_U1.X_SV3._SV3 X_U1.X_SV4._SV4 X_U1.X_SC3._SC3 
+         RON    1.000000E-06    1.000000E-06    1.000000E-06 
+        ROFF    1.000000E+09    1.000000E+09    1.000000E+09 
+         VON     .75             .75             .8          
+        VOFF     .8              .8              .75         
+
+
+               X_U1.X_OUT_CL._OUT_CL 
+         RON     .1          
+        ROFF    1.000000E+09 
+         VON    -.1          
+        VOFF     .1          
+
+
+               X_U1.X_ESDN._ESDN 
+         RON    1.000000E-03 
+        ROFF    1.000000E+09 
+         VON    0            
+        VOFF     .01         
+
+
+               X_U1.X_ESDP._ESDP               X_U1.X_SC4._SC4 X_U1.X_SV5._SV5 
+         RON    1.000000E-03                    1.000000E-06    1.000000E-06 
+        ROFF    1.000000E+09                    1.000000E+09    1.000000E+09 
+         VON    6.1                              .8              .75         
+        VOFF    5.9                              .75             .8          
+
+
+               X_U1.X_SV6._SV6 X_U1.X_SC5._SC5 X_U1.X_SV7._SV7 
+         RON    1.000000E-06    1.000000E-06    1.000000E-06 
+        ROFF    1.000000E+09    1.000000E+09    1.000000E+09 
+         VON     .75             .8              .75         
+        VOFF     .8              .75             .8          
+
+
+Starting pseudo-transient algorithm.
+
+INFO(ORPSIM-16594): To improve Pseudotransient Convergence and Performance, set following options to relax stabilization criteria for capacitor currents and inductor voltages: PTRANABSTOL=1e-5, PTRANVNTOL=1e-4
+
+WARNING(ORPSIM-16534): Using high values of ITL4 for Speed Level > 0 may increase total simulation job time.
+
+ERROR -- Convergence problem in bias point calculation
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00091)-729.6E+03 (N00130)    1.2768 (N00186)    1.1674 (N00190)    0.0000     
+
+(N00231)   -2.1259 (N01173)     .1216 (X_U1.FB1) 243.2E+03                      
+
+(X_U1.FBV)   -2.1259                  (X_U1.INN)  -21.9680                      
+
+(X_U1.INP)     .1213                  (X_U1.INFC) 43.90E-09                     
+
+(X_U1.INFV)     .1213                 (X_U1.INNV)  -21.9680                     
+
+(X_U1.INPC) 43.90E-09                 (X_U1.INPP)-4680.5000                     
+
+(X_U1.INPV)     .1213                 (X_U1.OUT1) 10.00E+06                     
+
+(X_U1.OUT2) 243.2E+03                 (X_U1.OUT3) 10.00E+06                     
+
+(X_U1.OUT4)   -2.1259                 (X_U1.ESD_IN)     .1213                   
+
+(X_U1.N05328) 243.2E+03               (X_U1.N05508)-10.00E+06                   
+
+(X_U1.N917958) -205.5900              (X_U1.N1010477)   -2.0043                 
+
+(X_U1.N1106589)-4680.5000             (X_U1.N1111608) -227.5600             
+
+
+  These voltages failed to converge:
+
+    V(N00091)                 =  -735.50KV  \  -729.62KV
+    V(N00231)                 =     4.737V  \    -2.126V
+    V(X_U1.N05508)            =   -10.08MV  \   -10.00MV
+    V(X_U1.INN)               =    -20.31V  \    -21.97V
+    V(X_U1.OUT2)              =   245.16KV  \   243.20KV
+    V(X_U1.FB1)               =   245.16KV  \   243.20KV
+    V(X_U1.N05328)            =   245.17KV  \   243.21KV
+    V(N00130)                 =     3.180V  \     1.277V
+    V(X_U1.INNV)              =    -20.31V  \    -21.97V
+    V(X_U1.FBV)               =     4.737V  \    -2.126V
+    V(X_U1.OUT4)              =     4.737V  \    -2.126V
+    V(X_U1.OUT1)              =    10.08MV  \    10.00MV
+    V(X_U1.N917958)           =   -207.24V  \   -205.59V
+    V(X_U1.N1010477)          =     4.859V  \    -2.004V
+    V(X_U1.OUT3)              =    10.08MV  \    10.00MV
+
+  These supply currents failed to converge:
+
+    I(X_U1.E_E6)              =    10.00GA  \    10.00GA
+    I(X_U1.E_E5)              =     9.55mA  \    9.491mA
+    I(X_U1.E_E7)              =   -10.00GA  \   -10.00GA
+    I(V_V2)                   =    490.33A  \    486.41A
+    I(X_U1.V_VOUTOFFSET)      =    40.23mA  \    2.126mA
+    I(X_U1.V_V7)              =    44.97mA  \    6.347nA
+
+ERROR(ORPSIM-15659): Discontinuing simulation due to convergence problem
+
+**** Interrupt ****

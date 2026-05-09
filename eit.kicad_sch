@@ -1,0 +1,662 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "759af5b8-c12e-4f5d-b4db-7f564b4cc929")
+	(paper "A4")
+	(lib_symbols)
+	(junction
+		(at 101.6 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1b080778-ae1b-40e9-9af0-7d3c8f5019ed")
+	)
+	(bus
+		(pts
+			(xy 93.98 110.49) (xy 101.6 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ebd1c57-7d78-4781-8fb5-a23626be46b3")
+	)
+	(bus
+		(pts
+			(xy 101.6 138.43) (xy 101.6 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14f9e932-e2ae-4d31-80a5-db53fb0df361")
+	)
+	(bus
+		(pts
+			(xy 156.21 111.76) (xy 162.56 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f42902f-a236-4a3d-b598-d35655392f4a")
+	)
+	(bus
+		(pts
+			(xy 182.88 91.44) (xy 189.23 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2fb5df1a-6490-40b4-ae92-19fbd95c5cd0")
+	)
+	(wire
+		(pts
+			(xy 104.14 115.57) (xy 93.98 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32ce2f46-6e9e-4d8d-a216-70cf7ef36cac")
+	)
+	(bus
+		(pts
+			(xy 180.34 128.27) (xy 180.34 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a4928d5-bbf3-4f26-bbfc-1da32ff2feab")
+	)
+	(bus
+		(pts
+			(xy 101.6 110.49) (xy 109.22 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4726f270-7d6b-4fe0-812c-f421a48370c5")
+	)
+	(bus
+		(pts
+			(xy 156.21 64.77) (xy 162.56 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "538d208e-bada-4188-b8ca-009bc80120b2")
+	)
+	(bus
+		(pts
+			(xy 101.6 76.2) (xy 109.22 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "637a8a61-084f-4a78-bf55-1415dcbb15dd")
+	)
+	(wire
+		(pts
+			(xy 104.14 78.74) (xy 104.14 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a633bfc-69da-4ae8-8217-a17ba152cc1d")
+	)
+	(bus
+		(pts
+			(xy 180.34 138.43) (xy 101.6 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83035769-2123-4dd3-a857-60ac2d9421e2")
+	)
+	(wire
+		(pts
+			(xy 93.98 113.03) (xy 109.22 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89c55ab1-6a42-443c-8a7b-0f0a8c457393")
+	)
+	(bus
+		(pts
+			(xy 143.51 82.55) (xy 143.51 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a050581a-bacd-42ac-9785-106d47418c07")
+	)
+	(bus
+		(pts
+			(xy 101.6 123.19) (xy 93.98 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aec1caa3-3330-407c-90a2-fb9c05118d0e")
+	)
+	(bus
+		(pts
+			(xy 93.98 120.65) (xy 109.22 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba324fa0-8f8c-4000-ab30-b5fa176de91a")
+	)
+	(bus
+		(pts
+			(xy 101.6 110.49) (xy 101.6 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e467537f-1fcb-4806-ac38-ac9555e47de5")
+	)
+	(bus
+		(pts
+			(xy 93.98 118.11) (xy 109.22 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec7036a7-6b70-4c09-a6c3-4e410adf86b5")
+	)
+	(wire
+		(pts
+			(xy 104.14 78.74) (xy 109.22 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f27cf737-06e6-4f14-948b-28e52d86e885")
+	)
+	(sheet
+		(at 162.56 55.88)
+		(size 20.32 72.39)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5ecb3d64-6103-45a6-82dc-775ef0cb8570")
+		(property "Sheetname" "Mux"
+			(at 162.56 55.1684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "mux.kicad_sch"
+			(at 162.56 128.8546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "vin{+,-}" bidirectional
+			(at 162.56 111.76 180)
+			(uuid "7bdc2dc8-2f45-4c05-9aa4-6f27fe865d3e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "electrode[0..15]" bidirectional
+			(at 182.88 91.44 0)
+			(uuid "107468e3-16cf-4343-abf5-221d9d48805f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "current{out,return}" input
+			(at 162.56 64.77 180)
+			(uuid "70552de0-b9ff-4cee-ada8-b6061ad68c6c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "register{ser1,ser2,rclk,srclk}" input
+			(at 180.34 128.27 270)
+			(uuid "e0c7e367-41a5-4c24-80bc-5a29593ff853")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "eit"
+				(path "/759af5b8-c12e-4f5d-b4db-7f564b4cc929"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 109.22 101.6)
+		(size 46.99 26.67)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "8456babe-6aec-468a-af58-e9f281f6b4ab")
+		(property "Sheetname" "Voltage Measurement"
+			(at 109.22 100.8884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "voltage_measurement.kicad_sch"
+			(at 109.22 128.8546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "cs" input
+			(at 109.22 113.03 180)
+			(uuid "1cb54fcd-b0ac-4c41-a699-3574967ca8d3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "vin{+,-}" output
+			(at 156.21 111.76 0)
+			(uuid "b89ed52d-2d99-47aa-b5fd-4e33ce03df0d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "shunt{-,+}" input
+			(at 143.51 101.6 90)
+			(uuid "c52f4c49-97ab-4ae7-9153-6010f9f5a2af")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "spi{sclk,mosi,miso}" bidirectional
+			(at 109.22 110.49 180)
+			(uuid "dc9597f4-cb8c-4adc-9be1-a4487f718bad")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "igain[0..4]" input
+			(at 109.22 120.65 180)
+			(uuid "d1638133-049b-44af-80f2-c605a88b10f6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "vgain[0..4]" input
+			(at 109.22 118.11 180)
+			(uuid "6784f358-5820-48d3-9fb3-86ea815bc1ee")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "eit"
+				(path "/759af5b8-c12e-4f5d-b4db-7f564b4cc929"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 48.26 55.88)
+		(size 45.72 26.67)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "957c9271-54be-4c4b-b694-07264d2b0cbe")
+		(property "Sheetname" "Power Electronics"
+			(at 48.26 55.1684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 48.26 83.1346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "eit"
+				(path "/759af5b8-c12e-4f5d-b4db-7f564b4cc929"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 109.22 55.88)
+		(size 46.99 26.67)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "af37e16a-a600-42de-9bdc-f9fb0d5d38f7")
+		(property "Sheetname" "Current Injection"
+			(at 109.22 55.1684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "current_injection.kicad_sch"
+			(at 109.22 83.1346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "cs" input
+			(at 109.22 78.74 180)
+			(uuid "8f219eed-8d24-4e92-bec1-e9529c495ebe")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "spi{sclk,mosi,miso}" bidirectional
+			(at 109.22 76.2 180)
+			(uuid "7eff3f41-9287-4bd4-a38c-f5b6193dfac5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "shunt{-,+}" output
+			(at 143.51 82.55 270)
+			(uuid "eed35e5d-a37f-45e6-8531-61f2ab240431")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "current{out,return}" output
+			(at 156.21 64.77 0)
+			(uuid "a03e12a7-2308-409a-944b-df7d16b8b1c0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "eit"
+				(path "/759af5b8-c12e-4f5d-b4db-7f564b4cc929"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 48.26 101.6)
+		(size 45.72 26.67)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "e57e5b87-2483-4b55-b446-92545add184b")
+		(property "Sheetname" "Microcontroller"
+			(at 48.26 100.8884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "microcontroller.kicad_sch"
+			(at 48.26 128.8546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "spi{sclk,mosi,miso}" bidirectional
+			(at 93.98 110.49 0)
+			(uuid "11f519cb-8cbf-4d95-9268-0ca913731dec")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "dac_cs" output
+			(at 93.98 115.57 0)
+			(uuid "b95e2308-4937-490c-af17-5ce808983b8d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "adc_cs" output
+			(at 93.98 113.03 0)
+			(uuid "395d5ce9-69d0-4e9e-8bee-ff58d50e15e6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "v_measure_gain[0..4]" input
+			(at 93.98 118.11 0)
+			(uuid "405e0802-fa4f-43d9-88f8-1309581d3f68")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "i_measure_gain[0..4]" input
+			(at 93.98 120.65 0)
+			(uuid "04f4cc8b-12df-47d7-ab51-38449088f95e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "register{ser1,ser2,rclk,srclk}" input
+			(at 93.98 123.19 0)
+			(uuid "3fb58d96-a841-4e0a-acd4-0c337be44ebd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "eit"
+				(path "/759af5b8-c12e-4f5d-b4db-7f564b4cc929"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 189.23 55.88)
+		(size 19.05 72.39)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "fa2c9b72-50df-41fd-a90b-f2f081b57315")
+		(property "Sheetname" "Sensor Interface"
+			(at 189.23 55.1684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Sensor Interface.kicad_sch"
+			(at 189.23 128.8546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "electrode[0..15]" bidirectional
+			(at 189.23 91.44 180)
+			(uuid "bdce7144-cdb5-47ab-8798-296bf912cdce")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "eit"
+				(path "/759af5b8-c12e-4f5d-b4db-7f564b4cc929"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

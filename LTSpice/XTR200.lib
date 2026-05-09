@@ -1,0 +1,149 @@
+* XTR200 - Rev. E2
+* Created by Robert Clifton; October 23, 2025
+******************************************************
+* MACRO-MODEL SIMULATED PARAMETERS:
+******************************************************
+* SMALL SIGNAL BANDWIDTH
+* SLEW RATE
+* OUTPUT VOLTAGE HEADROOM
+* MINIMUM OUTPUT VOLTAGE
+* OUTPUT OFFSET CURRENT
+* INPUT BIAS CURRENT 
+* INPUT IMPEDANCE
+* SHORT CIRCUIT CURRENT LIMIT
+* QUIESCENT CURRENT
+******************************************************
+* source XTR200
+.subckt XTR200 MODE INPUT SET VSP IS VG OUT GND 
+X_SV1    MODE GND INN INNV SCHEMATIC1_SV1 
+E_E6         N05508 GND INN INP -1MEG
+E_E5         OUT2 GND FB1 N05328 -1MEG
+R_R15         N05328 VSP  500 TC=0,0 
+R_R16         IS VSP  50 TC=0,0 
+G_G6         N05328 SET N05508 GND 1m
+R_R17         VG IS  1k TC=0,0 
+X_SC1    MODE GND INN SET SCHEMATIC1_SC1 
+X_SV2    MODE GND OUT1 OUT3 SCHEMATIC1_SV2 
+X_SC2    MODE GND OUT2 OUT3 SCHEMATIC1_SC2 
+R_R20         GND INNV  40k TC=0,0 
+R_R21         INNV FBV  110k TC=0,0 
+X_SV3    MODE GND OUT4 FBV SCHEMATIC1_SV3 
+X_SV4    MODE GND OUT2 FB1 SCHEMATIC1_SV4 
+X_SC3    MODE GND IS FB1 SCHEMATIC1_SC3 
+I_I1         ESD_IN GND DC 25p  
+V_VOUTOFFSET         OUT OUT4 1m
+I_I2         GND OUT DC 2u  
+X_U1         OUT3 GND VG OUT4 VCCS_LIM_GR 
+E_E7         OUT1 GND N917958 GND -1MEG
+R_R22         OUT1 N917958  1M TC=0,0 
+R_R23         N917958 N05508  1M TC=0,0 
+C_C1         GND ESD_IN  1p  TC=0,0 
+R_R26         GND ESD_IN  1T TC=0,0 
+X_OUT_CL    VSP N1010477 VSP N1010477 SCHEMATIC1_OUT_CL 
+V_V7         N1010477 OUT 2.5V
+X_ESDN    ESD_IN GND ESD_IN GND SCHEMATIC1_ESDN 
+I_Iq         VSP GND DC 327u  
+R_R29         ESD_IN INPUT  100m TC=0,0 
+X_ESDP    ESD_IN GND ESD_IN GND SCHEMATIC1_ESDP 
+C_C6         OUT4 VG  13.7n  TC=0,0 
+X_SV5    MODE GND VG N1162744 SCHEMATIC1_SV5 
+C_C7         OUT4 N1162744  19n  TC=0,0 
+C_C9         GND N1177115  7.44u  TC=0,0 
+X_SV6    MODE GND INP N1177115 SCHEMATIC1_SV6 
+X_U5         N1208666 GND INP GND AOL_2 
+R_R41         GND N1208666  1MEG TC=0,0 
+R_R42         GND INP  1MEG TC=0,0 
+C_C14         GND INP  676n  TC=0,0 
+X_U4         ESD_IN INP N1208666 GND AOL_1 
+.ends XTR200
+
+.subckt SCHEMATIC1_SV1 1 2 3 4  
+S_SV1         3 4 1 2 _SV1
+RS_SV1         1 2 1G
+.MODEL         _SV1 VSWITCH Roff=1G Ron=.000001 Voff=.8 Von=.75
+.ends SCHEMATIC1_SV1
+
+.subckt SCHEMATIC1_SC1 1 2 3 4  
+S_SC1         3 4 1 2 _SC1
+RS_SC1         1 2 1G
+.MODEL         _SC1 VSWITCH Roff=1G Ron=.000001 Voff=.75 Von=.8
+.ends SCHEMATIC1_SC1
+
+.subckt SCHEMATIC1_SV2 1 2 3 4  
+S_SV2         3 4 1 2 _SV2
+RS_SV2         1 2 1G
+.MODEL         _SV2 VSWITCH Roff=1G Ron=.000001 Voff=.8 Von=.75
+.ends SCHEMATIC1_SV2
+
+.subckt SCHEMATIC1_SC2 1 2 3 4  
+S_SC2         3 4 1 2 _SC2
+RS_SC2         1 2 1G
+.MODEL         _SC2 VSWITCH Roff=1G Ron=.000001 Voff=.75 Von=.8
+.ends SCHEMATIC1_SC2
+
+.subckt SCHEMATIC1_SV3 1 2 3 4  
+S_SV3         3 4 1 2 _SV3
+RS_SV3         1 2 1G
+.MODEL         _SV3 VSWITCH Roff=1G Ron=.000001 Voff=.8 Von=.75
+.ends SCHEMATIC1_SV3
+
+.subckt SCHEMATIC1_SV4 1 2 3 4  
+S_SV4         3 4 1 2 _SV4
+RS_SV4         1 2 1G
+.MODEL         _SV4 VSWITCH Roff=1G Ron=.000001 Voff=.8 Von=.75
+.ends SCHEMATIC1_SV4
+
+.subckt SCHEMATIC1_SC3 1 2 3 4  
+S_SC3         3 4 1 2 _SC3
+RS_SC3         1 2 1G
+.MODEL         _SC3 VSWITCH Roff=1G Ron=.000001 Voff=.75 Von=.8
+.ends SCHEMATIC1_SC3
+
+.subckt SCHEMATIC1_OUT_CL 1 2 3 4  
+S_OUT_CL         3 4 1 2 _OUT_CL
+RS_OUT_CL         1 2 1G
+.MODEL         _OUT_CL VSWITCH Roff=1G Ron=.1 Voff=.1 Von=-.1
+.ends SCHEMATIC1_OUT_CL
+
+.subckt SCHEMATIC1_ESDN 1 2 3 4  
+S_ESDN         3 4 1 2 _ESDN
+RS_ESDN         1 2 1G
+.MODEL         _ESDN VSWITCH Roff=1G Ron=.001 Voff=.1 Von=-0.1
+.ends SCHEMATIC1_ESDN
+
+.subckt SCHEMATIC1_ESDP 1 2 3 4  
+S_ESDP         3 4 1 2 _ESDP
+RS_ESDP         1 2 1G
+.MODEL         _ESDP VSWITCH Roff=1G Ron=.001 Voff=5.9 Von=6.1
+.ends SCHEMATIC1_ESDP
+
+.subckt SCHEMATIC1_SV5 1 2 3 4  
+S_SV5         3 4 1 2 _SV5
+RS_SV5         1 2 1G
+.MODEL         _SV5 VSWITCH Roff=1G Ron=.000001 Voff=.8 Von=.75
+.ends SCHEMATIC1_SV5
+
+.subckt SCHEMATIC1_SV6 1 2 3 4  
+S_SV6         3 4 1 2 _SV6
+RS_SV6         1 2 1G
+.MODEL         _SV6 VSWITCH Roff=1G Ron=.000001 Voff=.8 Von=.75
+.ends SCHEMATIC1_SV6
+* Voltage-controlled current source with limits - gross clamp
+.subckt VCCS_LIM_GR VC+ VC- IOUT+ IOUT-
+.param Gain = -1e-3
+.param Ipos = 40e-3
+.param Ineg = -40e-3
+G1 IOUT+ IOUT- VALUE={LIMIT(Gain*V(VC+,VC-),Ineg,Ipos)}
+.ends
+.subckt AOL_1 VC+ VC- IOUT+ IOUT-
+.param Gain = 1e-4
+.param Ipos = 1
+.param Ineg = -1
+G1 IOUT+ IOUT- VALUE={LIMIT(Gain*V(VC+,VC-),Ineg,Ipos)}
+.ends
+.subckt AOL_2 VC+ VC- IOUT+ IOUT-
+.param Gain = 1.33e-1
+.param Ipos = 4
+.param Ineg = -4
+G1 IOUT+ IOUT- VALUE={LIMIT(Gain*V(VC+,VC-),Ineg,Ipos)}
+.ends

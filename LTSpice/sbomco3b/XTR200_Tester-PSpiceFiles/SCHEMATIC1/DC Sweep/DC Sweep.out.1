@@ -1,0 +1,98 @@
+
+**** 08/12/25 11:12:25 *** PSpice 23.1.0 (29 September 2023) ** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DC Sweep"  [ c:\users\a0227588\documents\spice models\xtr200\xtr200_tester-PSpiceFiles\SCHEMATIC1\DC Sweep.s
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "DC Sweep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "c:/users/a0227588/documents/spice models/xtr200_current/xtr200 library/xtr200.lib" 
+* From [PSPICE NETLIST] section of C:\SPB_Data-Silent\cdssetup\OrCAD_PSpice\23.1.0\PSpice.ini file:
+.lib "C:\Users\a0227588\Downloads\OPA348_PSpice\opa348.lib" 
+.lib "C:\Users\a0227588\Documents\Spice Models\Autospice Test Models\Other\Autospice_Library.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_V3 0 5 .1 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source XTR200_TESTER
+X_U1         N00190 N00360 N00091 N00186 N00130 N00130 N00231 GND XTR200
+R_R1         GND N00091  1.5k TC=0,0 
+V_V1         N00190 GND 0
+V_V2         N00186 GND 24
+R_R2         GND N00231  1k TC=0,0 
+V_V3         N01593 GND DC 0 AC 0
++PULSE 0 5 0 10n 10n 4.9998e-4 1m
+R_R3         N01593 N00360  1k TC=0,0 
+
+**** RESUMING "DC Sweep.cir" ****
+.END
+
+WARNING(ORPSIM-15223): Library file "c:\users\a0227588\documents\spice models\xtr200_current\xtr200 library\xtr200.lib" has changed since index file xtr200.ind was created.
+
+WARNING(ORPSIM-15227): The timestamp changed from Tue Aug 12 11:09:22 2025 to Tue Aug 12 11:10:15 2025.
+
+INFO(ORPSIM-15422): Making new index file xtr200.ind for library file xtr200.lib.
+
+Index has 11 entries from 1 file(s).
+
+ERROR(ORPSIM-15142): Node GND is floating
+
+ERROR(ORPSIM-15142): Node N00091 is floating
+
+ERROR(ORPSIM-15142): Node N00190 is floating
+
+ERROR(ORPSIM-15142): Node N00186 is floating
+
+ERROR(ORPSIM-15142): Node N00231 is floating
+
+ERROR(ORPSIM-15142): Node N01593 is floating
+
+ERROR(ORPSIM-15142): Node N00360 is floating
+
+ERROR(ORPSIM-15142): Node X_U1.N05508 is floating
+
+ERROR(ORPSIM-15142): Node X_U1.INN is floating
+
+ERROR(ORPSIM-15142): Node X_U1.ESD_IN is floating
+
+ERROR(ORPSIM-15142): Node X_U1.OUT2 is floating
+
+ERROR(ORPSIM-15142): Node X_U1.FB1 is floating
+
+ERROR(ORPSIM-15142): Node X_U1.N05328 is floating
+
+ERROR(ORPSIM-15142): Node N00130 is floating
+
+ERROR(ORPSIM-15142): Node X_U1.INNV is floating
+
+ERROR(ORPSIM-15142): Node X_U1.FBV is floating
+
+ERROR(ORPSIM-15142): Node X_U1.OUT4 is floating
+
+ERROR(ORPSIM-15142): Node X_U1.OUT1 is floating
+
+ERROR(ORPSIM-15142): Node X_U1.N917958 is floating
+
+ERROR(ORPSIM-15142): Node X_U1.N1010477 is floating
+
+ERROR(ORPSIM-15142): Node X_U1.OUT3 is floating
+
