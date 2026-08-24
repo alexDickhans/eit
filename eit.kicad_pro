@@ -51,7 +51,13 @@
           "min_clearance": 0.5
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -180,7 +186,12 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        0.2,
+        0.3,
+        0.4
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -207,7 +218,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -473,13 +489,268 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "name": "Digital",
+        "pcb_color": "rgb(132, 0, 132)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "clearance": 0.15,
+        "name": "Electrodes",
+        "pcb_color": "rgb(185, 186, 180)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.15
+      },
+      {
+        "name": "Mux_Select",
+        "pcb_color": "rgb(72, 0, 0)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "Power",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.5,
+        "via_diameter": 0.8,
+        "via_drill": 0.4
       }
     ],
     "meta": {
       "version": 4
     },
-    "net_colors": null,
-    "netclass_assignments": null,
+    "net_colors": {
+      "+15V": "rgb(15, 89, 0)",
+      "+18V": "rgb(255, 158, 3)",
+      "+2V5": "rgb(255, 253, 24)",
+      "+3V3": "rgb(14, 112, 107)",
+      "+5V": "rgb(6, 9, 78)",
+      "+5VA": "rgb(63, 134, 255)",
+      "+BATT": "rgb(255, 56, 232)",
+      "-5VA": "rgb(24, 255, 0)",
+      "GND": "rgb(47, 47, 47)"
+    },
+    "netclass_assignments": {
+      "+15V": [
+        "Power"
+      ],
+      "+18V": [
+        "Power"
+      ],
+      "+5V": [
+        "Power"
+      ],
+      "+5VA": [
+        "Power"
+      ],
+      "+BATT": [
+        "Power"
+      ],
+      "-5VA": [
+        "Power"
+      ],
+      "/Current Injection/cs": [
+        "Digital"
+      ],
+      "/Current Injection/spi.miso": [
+        "Digital"
+      ],
+      "/Current Injection/spi.mosi": [
+        "Digital"
+      ],
+      "/Current Injection/spi.sclk": [
+        "Digital"
+      ],
+      "/Current Injection/spi{sclk,mosi,miso}": [
+        "Digital"
+      ],
+      "/Microcontroller/adc_cs": [
+        "Digital"
+      ],
+      "/Microcontroller/igain0": [
+        "Digital"
+      ],
+      "/Microcontroller/igain1": [
+        "Digital"
+      ],
+      "/Microcontroller/igain2": [
+        "Digital"
+      ],
+      "/Microcontroller/igain3": [
+        "Digital"
+      ],
+      "/Microcontroller/igain4": [
+        "Digital"
+      ],
+      "/Microcontroller/igain[0..4]": [
+        "Digital"
+      ],
+      "/Microcontroller/register.rclk": [
+        "Digital",
+        "Shift Register"
+      ],
+      "/Microcontroller/register.ser1": [
+        "Digital",
+        "Shift Register"
+      ],
+      "/Microcontroller/register.ser2": [
+        "Digital",
+        "Shift Register"
+      ],
+      "/Microcontroller/register.srclk": [
+        "Digital",
+        "Shift Register"
+      ],
+      "/Microcontroller/register{ser1,ser2,rclk,srclk}": [
+        "Digital",
+        "Shift Register"
+      ],
+      "/Microcontroller/vgain0": [
+        "Digital"
+      ],
+      "/Microcontroller/vgain1": [
+        "Digital"
+      ],
+      "/Microcontroller/vgain2": [
+        "Digital"
+      ],
+      "/Microcontroller/vgain3": [
+        "Digital"
+      ],
+      "/Microcontroller/vgain4": [
+        "Digital"
+      ],
+      "/Microcontroller/vgain[0..4]": [
+        "Digital"
+      ],
+      "/Mux/Shift Register/mux1_0": [
+        "Mux_Select"
+      ],
+      "/Mux/Shift Register/mux1_1": [
+        "Mux_Select"
+      ],
+      "/Mux/Shift Register/mux1_2": [
+        "Mux_Select"
+      ],
+      "/Mux/Shift Register/mux1_3": [
+        "Mux_Select"
+      ],
+      "/Mux/Shift Register/mux1_[0..3]": [
+        "Mux_Select"
+      ],
+      "/Mux/Shift Register/mux2_0": [
+        "Mux_Select"
+      ],
+      "/Mux/Shift Register/mux2_1": [
+        "Mux_Select"
+      ],
+      "/Mux/Shift Register/mux2_2": [
+        "Mux_Select"
+      ],
+      "/Mux/Shift Register/mux2_3": [
+        "Mux_Select"
+      ],
+      "/Mux/Shift Register/mux2_[0..3]": [
+        "Mux_Select"
+      ],
+      "/Mux/Shift Register1/mux1_0": [
+        "Mux_Select"
+      ],
+      "/Mux/Shift Register1/mux1_1": [
+        "Mux_Select"
+      ],
+      "/Mux/Shift Register1/mux1_2": [
+        "Mux_Select"
+      ],
+      "/Mux/Shift Register1/mux1_3": [
+        "Mux_Select"
+      ],
+      "/Mux/Shift Register1/mux1_[0..3]": [
+        "Mux_Select"
+      ],
+      "/Mux/Shift Register1/mux2_0": [
+        "Mux_Select"
+      ],
+      "/Mux/Shift Register1/mux2_1": [
+        "Mux_Select"
+      ],
+      "/Mux/Shift Register1/mux2_2": [
+        "Mux_Select"
+      ],
+      "/Mux/Shift Register1/mux2_3": [
+        "Mux_Select"
+      ],
+      "/Mux/Shift Register1/mux2_[0..3]": [
+        "Mux_Select"
+      ],
+      "/Mux/electrode0": [
+        "Electrodes"
+      ],
+      "/Mux/electrode1": [
+        "Electrodes"
+      ],
+      "/Mux/electrode10": [
+        "Electrodes"
+      ],
+      "/Mux/electrode11": [
+        "Electrodes"
+      ],
+      "/Mux/electrode12": [
+        "Electrodes"
+      ],
+      "/Mux/electrode13": [
+        "Electrodes"
+      ],
+      "/Mux/electrode14": [
+        "Electrodes"
+      ],
+      "/Mux/electrode15": [
+        "Electrodes"
+      ],
+      "/Mux/electrode2": [
+        "Electrodes"
+      ],
+      "/Mux/electrode3": [
+        "Electrodes"
+      ],
+      "/Mux/electrode4": [
+        "Electrodes"
+      ],
+      "/Mux/electrode5": [
+        "Electrodes"
+      ],
+      "/Mux/electrode6": [
+        "Electrodes"
+      ],
+      "/Mux/electrode7": [
+        "Electrodes"
+      ],
+      "/Mux/electrode8": [
+        "Electrodes"
+      ],
+      "/Mux/electrode9": [
+        "Electrodes"
+      ],
+      "/Mux/electrode[0..15]": [
+        "Electrodes"
+      ],
+      "/Power Electronics/filtered_18V": [
+        "Power"
+      ],
+      "GND": [
+        "Power"
+      ],
+      "Net-(A1-VSYS)": [
+        "Power"
+      ],
+      "Net-(D1-A)": [
+        "Power"
+      ]
+    },
     "netclass_patterns": []
   },
   "pcbnew": {

@@ -563,7 +563,7 @@
 				(justify right)
 			)
 		)
-		(pin "v_measure_gain[0..4]" input
+		(pin "vgain[0..4]" input
 			(at 93.98 118.11 0)
 			(uuid "405e0802-fa4f-43d9-88f8-1309581d3f68")
 			(effects
@@ -573,7 +573,7 @@
 				(justify right)
 			)
 		)
-		(pin "i_measure_gain[0..4]" input
+		(pin "igain[0..4]" input
 			(at 93.98 120.65 0)
 			(uuid "04f4cc8b-12df-47d7-ab51-38449088f95e")
 			(effects

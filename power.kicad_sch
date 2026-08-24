@@ -3436,6 +3436,12 @@
 		(uuid "71731448-85ed-4b46-ac54-78321ecae3ff")
 	)
 	(junction
+		(at 91.44 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "736b1bcd-cea5-4910-bb8d-6739b764616c")
+	)
+	(junction
 		(at 179.07 120.65)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3548,12 +3554,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d92dc197-ad25-4a2b-a2ca-db5d9f28baf9")
-	)
-	(junction
-		(at 91.44 107.95)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dc04bb93-a6e7-4aa0-a144-728eba297ecc")
 	)
 	(junction
 		(at 104.14 40.64)
@@ -3774,16 +3774,6 @@
 			(type default)
 		)
 		(uuid "14a03569-bdcc-4562-9c3d-ce0a65cd9f3c")
-	)
-	(wire
-		(pts
-			(xy 74.93 40.64) (xy 77.47 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1505463c-d2b7-4840-86ce-ea0a8bb32536")
 	)
 	(wire
 		(pts
@@ -4224,6 +4214,16 @@
 			(type default)
 		)
 		(uuid "527ef286-dfa0-4160-a1da-8047bea2c8be")
+	)
+	(wire
+		(pts
+			(xy 74.93 40.64) (xy 77.47 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5416168d-99ae-4336-9d57-b4cbba74f3e8")
 	)
 	(wire
 		(pts
@@ -4737,7 +4737,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 107.95) (xy 102.87 107.95)
+			(xy 83.82 107.95) (xy 91.44 107.95)
 		)
 		(stroke
 			(width 0)
@@ -4994,6 +4994,16 @@
 			(type default)
 		)
 		(uuid "c2484e01-04b1-43ad-ae10-26f4f1e6985d")
+	)
+	(wire
+		(pts
+			(xy 91.44 107.95) (xy 102.87 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c25a520c-f4f5-40c6-84b2-e3c0c86e035d")
 	)
 	(wire
 		(pts
@@ -5297,16 +5307,6 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 107.95) (xy 91.44 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc2e6759-0069-4f3e-bfa8-50f904770ace")
-	)
-	(wire
-		(pts
 			(xy 134.62 147.32) (xy 137.16 147.32)
 		)
 		(stroke
@@ -5364,6 +5364,284 @@
 			(justify left bottom)
 		)
 		(uuid "b868484d-d790-4d5d-b8c6-2d75cd18d916")
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 137.16 93.98 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5904a1de-fafa-4f07-b081-29eec142804c")
+		(property "Netclass" "Power"
+			(at 137.8585 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 11.43 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 120.65 40.64 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8a5d1ced-aee3-4215-9299-f3eaeae759b2")
+		(property "Netclass" "Power"
+			(at 121.3485 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -5.08 10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 101.6 31.75 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a7fbcb27-61c3-442e-b989-a337e6ca2c27")
+		(property "Netclass" "Power"
+			(at 102.2985 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -24.13 1.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 29.21 30.48 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "aac01ea3-c2ef-4399-9c22-769af2c6bb88")
+		(property "Netclass" "Power"
+			(at 29.9085 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -96.52 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 149.86 40.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b42396b5-ba60-4144-9551-fd4dca145db7")
+		(property "Netclass" "Power"
+			(at 148.59 36.322 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 24.13 10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 191.77 40.64 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bf6cd654-1980-4b7d-9f48-ba7da70a53b9")
+		(property "Netclass" "Power"
+			(at 192.4685 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 66.04 10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 160.02 147.32 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ca64fe52-bb72-469d-b446-9aaf77a2a13d")
+		(property "Netclass" "Power"
+			(at 160.7185 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 34.29 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 31.75 20.32 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cee03de6-fcbe-4e1f-b620-f7a387588ddf")
+		(property "Netclass" "Power"
+			(at 32.4485 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -93.98 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 198.12 109.22 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d49960d7-3d4b-48b5-9083-f75745648ab4")
+		(property "Netclass" "Power"
+			(at 198.8185 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 72.39 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -6217,6 +6495,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C2864847"
+			(at 83.82 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "9"
 			(uuid "1cb2a54a-64b5-477c-b7f2-d56260faa1e6")
 		)
@@ -6876,6 +7163,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C514420"
+			(at 179.07 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "46cf464b-6bf2-4b4d-b02b-ef7327fa68b1")
 		)
@@ -6964,6 +7260,15 @@
 			)
 		)
 		(property "Description" "Low-noise inverting charge pump with both positive and negative LDO's, with 2.7V-5.5V input to +1.5 to +5V and -1.5 to -5V Output Voltage, WSON-12"
+			(at 176.53 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C473398"
 			(at 176.53 99.06 0)
 			(effects
 				(font
@@ -7280,6 +7585,85 @@
 			(project ""
 				(path "/759af5b8-c12e-4f5d-b4db-7f564b4cc929/957c9271-54be-4c4b-b694-07264d2b0cbe"
 					(reference "#PWR060")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 139.7 45.72 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6f1d903d-035e-4afc-baf0-c87ab544d943")
+		(property "Reference" "C13"
+			(at 135.89 44.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 135.89 46.9899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+			(at 138.7348 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 139.7 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 139.7 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C18739"
+			(at 139.7 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "81cfc4cb-721f-4657-8d1d-1ee8798a4707")
+		)
+		(pin "2"
+			(uuid "0b0bb3b4-87e8-430e-94e1-eb56135b4cf1")
+		)
+		(instances
+			(project "eit"
+				(path "/759af5b8-c12e-4f5d-b4db-7f564b4cc929/957c9271-54be-4c4b-b694-07264d2b0cbe"
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -7941,6 +8325,84 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 91.44 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8806b3d9-203a-4a5d-84cd-c14bb23b6e0b")
+		(property "Reference" "C24"
+			(at 93.472 105.156 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.47u"
+			(at 92.71 106.934 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 91.44 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 91.44 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 91.44 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C1623"
+			(at 91.44 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "98e5577b-5b7b-4f59-a009-8c48851ced59")
+		)
+		(pin "2"
+			(uuid "25a9efc0-8ee6-4d76-83f6-44c0b1743bbb")
+		)
+		(instances
+			(project "eit"
+				(path "/759af5b8-c12e-4f5d-b4db-7f564b4cc929/957c9271-54be-4c4b-b694-07264d2b0cbe"
+					(reference "C24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 165.1 158.75 0)
 		(unit 1)
@@ -8157,6 +8619,110 @@
 			(project ""
 				(path "/759af5b8-c12e-4f5d-b4db-7f564b4cc929/957c9271-54be-4c4b-b694-07264d2b0cbe"
 					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Linear:LT3045xDD")
+		(at 102.87 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9beb0439-863b-4bbe-bf84-9bd7cc881553")
+		(property "Reference" "U11"
+			(at 102.87 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LT3045xDD"
+			(at 102.87 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:DFN-10-1EP_3x3mm_P0.5mm_EP1.65x2.38mm"
+			(at 102.87 88.265 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/3045fa.pdf"
+			(at 102.87 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "500mA, Adjustable, Ultralow Noise, Ultrahigh PSRR Linear Regulator, DFN-10"
+			(at 102.87 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C514420"
+			(at 102.87 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "3b78e943-76a1-45e3-962f-30cb4f03b9d5")
+		)
+		(pin "6"
+			(uuid "0b057012-686f-4ca8-be53-6bd5ebab6f62")
+		)
+		(pin "9"
+			(uuid "e5986aba-7d16-490e-b9b7-5f7d1228af80")
+		)
+		(pin "10"
+			(uuid "be35d571-be1e-4e69-97f5-7c09dbfa99e1")
+		)
+		(pin "1"
+			(uuid "4d2eba87-31f3-4269-b54f-6686fa66896b")
+		)
+		(pin "5"
+			(uuid "77117985-daac-482c-bf08-5a5504b65681")
+		)
+		(pin "3"
+			(uuid "13f130a0-119b-4b86-bce1-e17f80dcbe9e")
+		)
+		(pin "2"
+			(uuid "a6fd6df6-4400-4bca-88b1-0c4a90dd4660")
+		)
+		(pin "8"
+			(uuid "22f19bde-98ef-45e2-9d4a-5bcca7ac5b7b")
+		)
+		(pin "7"
+			(uuid "4fbe5d17-9441-4225-8d6e-c81e4e59d782")
+		)
+		(pin "11"
+			(uuid "79b253b8-db1f-48d1-8085-9f9d64f3ab92")
+		)
+		(instances
+			(project "eit"
+				(path "/759af5b8-c12e-4f5d-b4db-7f564b4cc929/957c9271-54be-4c4b-b694-07264d2b0cbe"
+					(reference "U11")
 					(unit 1)
 				)
 			)
@@ -9223,85 +9789,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 139.7 45.72 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d03f1742-e5db-4d1d-b292-5f4272200030")
-		(property "Reference" "C13"
-			(at 135.89 44.4499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10u"
-			(at 135.89 46.9899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
-			(at 138.7348 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 139.7 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 139.7 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C18739"
-			(at 139.7 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ca21f756-4bcf-48e4-addb-16857ae20294")
-		)
-		(pin "2"
-			(uuid "0fab06c8-f24d-465f-b077-b4a164f4e273")
-		)
-		(instances
-			(project ""
-				(path "/759af5b8-c12e-4f5d-b4db-7f564b4cc929/957c9271-54be-4c4b-b694-07264d2b0cbe"
-					(reference "C13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:D_Schottky")
 		(at 111.76 40.64 180)
 		(unit 1)
@@ -9467,7 +9954,7 @@
 		(dnp no)
 		(uuid "d4e5d9d5-0086-40ee-87cb-25bb473d52ff")
 		(property "Reference" "C23"
-			(at 167.64 50.546 0)
+			(at 169.672 51.816 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9648,6 +10135,15 @@
 			)
 		)
 		(property "Description" "LM27313, 1A, 40Vout Boost Voltage Regulator, 600KHz Frequency,"
+			(at 95.25 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C80169"
 			(at 95.25 43.18 0)
 			(effects
 				(font
@@ -10360,180 +10856,6 @@
 			(project ""
 				(path "/759af5b8-c12e-4f5d-b4db-7f564b4cc929/957c9271-54be-4c4b-b694-07264d2b0cbe"
 					(reference "#PWR065")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 91.44 105.41 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f9c14f17-8481-4f4e-9584-6bf10fccd948")
-		(property "Reference" "C24"
-			(at 97.536 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "4.7u"
-			(at 97.79 106.934 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 91.44 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 91.44 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 91.44 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C76642"
-			(at 91.44 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "34ae6c29-39a5-4409-99d7-9b0b9b4b8144")
-		)
-		(pin "1"
-			(uuid "c334c012-7adb-4832-b2cf-2743661c256c")
-		)
-		(instances
-			(project "eit"
-				(path "/759af5b8-c12e-4f5d-b4db-7f564b4cc929/957c9271-54be-4c4b-b694-07264d2b0cbe"
-					(reference "C24")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Linear:LT3045xDD")
-		(at 102.87 96.52 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fdd61102-04d4-4e1e-8160-3c34badc3b66")
-		(property "Reference" "U11"
-			(at 102.87 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LT3045xDD"
-			(at 102.87 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_DFN_QFN:DFN-10-1EP_3x3mm_P0.5mm_EP1.65x2.38mm"
-			(at 102.87 88.265 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/3045fa.pdf"
-			(at 102.87 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "500mA, Adjustable, Ultralow Noise, Ultrahigh PSRR Linear Regulator, DFN-10"
-			(at 102.87 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "cf5b43c7-9069-4dcd-9856-7a2f63cc7dd1")
-		)
-		(pin "6"
-			(uuid "380d02d9-a19f-4d34-8535-0222bfbbc5c4")
-		)
-		(pin "9"
-			(uuid "3ecd388c-8388-4519-8e4e-f67e791d2196")
-		)
-		(pin "10"
-			(uuid "418546a3-e86d-4f76-8bbe-c1b6fd53f1d6")
-		)
-		(pin "1"
-			(uuid "cdd3e803-d725-4b3a-8cf6-9ef1e00fc0d5")
-		)
-		(pin "5"
-			(uuid "faa844ac-7d51-4149-8e2d-d5ac9dc837db")
-		)
-		(pin "3"
-			(uuid "ddb58fa3-8fea-4022-a25a-dd1cd8b6e3fb")
-		)
-		(pin "2"
-			(uuid "b81cdcaa-48f3-415d-8b8d-c3761f5632ad")
-		)
-		(pin "8"
-			(uuid "8dd66464-4142-46a1-83e1-579aa0758066")
-		)
-		(pin "7"
-			(uuid "4f8a8a62-51ea-40ca-a5c6-61b9237d3703")
-		)
-		(pin "11"
-			(uuid "20dc48b9-0e6e-48fe-a3f3-a3e76e19a8b0")
-		)
-		(instances
-			(project "eit"
-				(path "/759af5b8-c12e-4f5d-b4db-7f564b4cc929/957c9271-54be-4c4b-b694-07264d2b0cbe"
-					(reference "U11")
 					(unit 1)
 				)
 			)

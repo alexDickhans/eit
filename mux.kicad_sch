@@ -181,16 +181,6 @@
 	)
 	(bus
 		(pts
-			(xy 110.49 78.74) (xy 110.49 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3cea49c9-2beb-43ff-b484-e2ee10d10545")
-	)
-	(bus
-		(pts
 			(xy 181.61 78.74) (xy 204.47 78.74)
 		)
 		(stroke
@@ -218,16 +208,6 @@
 			(type default)
 		)
 		(uuid "42443523-547e-4675-9970-641c6c29f1e6")
-	)
-	(bus
-		(pts
-			(xy 105.41 110.49) (xy 113.03 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4246d1f1-29c0-4ce8-a560-d6d4e6564dc5")
 	)
 	(wire
 		(pts
@@ -258,16 +238,6 @@
 			(type default)
 		)
 		(uuid "5214c4ca-e0d5-4874-ad4d-d51e4cf55d08")
-	)
-	(bus
-		(pts
-			(xy 110.49 107.95) (xy 105.41 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5c3edd54-8c6f-4e3c-979a-a9a38d88a0e4")
 	)
 	(bus
 		(pts
@@ -381,6 +351,16 @@
 	)
 	(bus
 		(pts
+			(xy 113.03 110.49) (xy 105.41 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a71d0dca-6793-4eea-9cb1-2ab6072143d6")
+	)
+	(bus
+		(pts
 			(xy 58.42 119.38) (xy 58.42 121.92)
 		)
 		(stroke
@@ -398,6 +378,16 @@
 			(type default)
 		)
 		(uuid "ad5d5578-1e16-436a-9ca1-fe60383c5b27")
+	)
+	(bus
+		(pts
+			(xy 113.03 104.14) (xy 113.03 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae5347f3-7160-47c5-9a67-08c5e8736637")
 	)
 	(wire
 		(pts
@@ -438,6 +428,16 @@
 			(type default)
 		)
 		(uuid "c37694e8-1c0d-494f-8174-c1bb1ed2df53")
+	)
+	(bus
+		(pts
+			(xy 110.49 107.95) (xy 110.49 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6e67e8c-2956-499a-9f72-2c6b5d4491a4")
 	)
 	(bus
 		(pts
@@ -531,6 +531,16 @@
 	)
 	(bus
 		(pts
+			(xy 105.41 107.95) (xy 110.49 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed598970-c7b2-4e1b-8086-2f4923ba4e53")
+	)
+	(bus
+		(pts
 			(xy 170.18 78.74) (xy 177.8 78.74)
 		)
 		(stroke
@@ -538,16 +548,6 @@
 			(type default)
 		)
 		(uuid "f220cfd4-cc22-4d88-b637-72cafe865ea5")
-	)
-	(bus
-		(pts
-			(xy 113.03 110.49) (xy 113.03 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f8d0f132-fece-4161-aef9-2b48072ce080")
 	)
 	(bus
 		(pts
@@ -702,6 +702,69 @@
 			(justify right)
 		)
 		(uuid "c4261678-3e22-4643-8e28-3dd785f44864")
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 57.15 104.14 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 72 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "709de8fe-a866-4c3d-99cf-776dadf96522")
+		(property "Netclass" "Shift Register"
+			(at 57.8485 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -33.02 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 259.08 92.71 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cbf76acd-68c7-48bd-8e15-3d5bfc4a08f0")
+		(property "Netclass" "Electrodes"
+			(at 259.7785 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -39.37 8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
 	)
 	(sheet
 		(at 204.47 68.58)
@@ -1004,7 +1067,7 @@
 			)
 		)
 		(pin "mux2_[0..3]" output
-			(at 105.41 110.49 0)
+			(at 105.41 107.95 0)
 			(uuid "0cc95f85-2695-4de8-8073-68ea5aba2f2a")
 			(effects
 				(font
@@ -1014,7 +1077,7 @@
 			)
 		)
 		(pin "mux1_[0..3]" output
-			(at 105.41 107.95 0)
+			(at 105.41 110.49 0)
 			(uuid "8d88dbc5-9315-460c-bbfa-2bd0fc0c6d83")
 			(effects
 				(font
