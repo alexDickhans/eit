@@ -1340,7 +1340,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3ef654d6-f4ee-430c-83a4-c2c58f79bd3c")
-		(property "Reference" "U13"
+		(property "Reference" "U9"
 			(at 132.9533 81.28 0)
 			(effects
 				(font
@@ -1445,11 +1445,11 @@
 		(instances
 			(project "eit"
 				(path "/759af5b8-c12e-4f5d-b4db-7f564b4cc929/5ecb3d64-6103-45a6-82dc-775ef0cb8570/9178c5b1-fdef-4e87-b52d-7f198f3ffcb5"
-					(reference "U1")
+					(reference "U7")
 					(unit 1)
 				)
 				(path "/759af5b8-c12e-4f5d-b4db-7f564b4cc929/5ecb3d64-6103-45a6-82dc-775ef0cb8570/c97c4acd-1dd9-4643-9cb9-ad6ee67c2725"
-					(reference "U13")
+					(reference "U9")
 					(unit 1)
 				)
 			)
@@ -1676,7 +1676,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e872fefd-c7d2-4376-9404-64b696f284d3")
-		(property "Reference" "C7"
+		(property "Reference" "C53"
 			(at 125.7363 69.85 90)
 			(effects
 				(font
@@ -1737,11 +1737,11 @@
 		(instances
 			(project "eit"
 				(path "/759af5b8-c12e-4f5d-b4db-7f564b4cc929/5ecb3d64-6103-45a6-82dc-775ef0cb8570/9178c5b1-fdef-4e87-b52d-7f198f3ffcb5"
-					(reference "C8")
+					(reference "C38")
 					(unit 1)
 				)
 				(path "/759af5b8-c12e-4f5d-b4db-7f564b4cc929/5ecb3d64-6103-45a6-82dc-775ef0cb8570/c97c4acd-1dd9-4643-9cb9-ad6ee67c2725"
-					(reference "C7")
+					(reference "C53")
 					(unit 1)
 				)
 			)
