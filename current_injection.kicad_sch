@@ -3520,6 +3520,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C1731595"
+			(at 149.86 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "8"
 			(uuid "40cbe38c-e5ff-48af-9be2-dd89ade29872")
 		)
@@ -4354,6 +4363,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C1731595"
+			(at 149.86 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "8"
 			(uuid "0069bcd3-2c18-45ce-8d19-a99e242cc5ae")
 		)
@@ -4867,7 +4885,7 @@
 				)
 			)
 		)
-		(property "Value" "860"
+		(property "Value" "820"
 			(at 167.64 123.19 90)
 			(effects
 				(font
@@ -4902,7 +4920,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C346591"
+		(property "LCSC Part #" "C19700783"
 			(at 167.64 127 90)
 			(effects
 				(font
@@ -4972,6 +4990,15 @@
 		)
 		(property "Description" "4 resistor network, parallel topology, split"
 			(at 172.72 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C1731595"
+			(at 172.72 64.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5259,6 +5286,15 @@
 		)
 		(property "Description" "4 resistor network, parallel topology, split"
 			(at 172.72 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C1731595"
+			(at 172.72 101.6 90)
 			(effects
 				(font
 					(size 1.27 1.27)

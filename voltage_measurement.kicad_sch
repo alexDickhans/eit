@@ -6607,6 +6607,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C2670004"
+			(at 93.98 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "7"
 			(uuid "10cce5d2-0bd0-49c3-9be7-6b396b8580bc")
 		)
