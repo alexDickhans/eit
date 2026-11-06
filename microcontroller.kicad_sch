@@ -2568,7 +2568,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "MBR0530"
+		(property "Value" "MBR0540T1G"
 			(at 134.62 54.9274 90)
 			(effects
 				(font
