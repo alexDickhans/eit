@@ -284,6 +284,7 @@
 		(layer "F.Cu")
 		(uuid "053cc857-c88d-4930-acde-a02e597ac9e6")
 		(at 182.88 82.804)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(property "Reference" "REF**"
 			(at 0 -0.5 0)
 			(unlocked yes)
@@ -13576,7 +13577,7 @@
 				)
 			)
 		)
-		(property "Value" "MBR0530"
+		(property "Value" "MBR0540T1G"
 			(at 0 2.1 0)
 			(layer "F.Fab")
 			(uuid "f23097ec-a3d5-4c4c-975c-345a033f9c34")
@@ -26555,6 +26556,7 @@
 		(layer "F.Cu")
 		(uuid "fe248acf-45f9-41e5-b519-fd83ffee1e01")
 		(at 184.404 90.932)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(property "Reference" "REF**"
 			(at 0 -0.5 0)
 			(unlocked yes)
